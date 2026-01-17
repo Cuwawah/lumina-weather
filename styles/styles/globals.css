@@ -1,0 +1,38 @@
+/* This part ensures the app fills the entire screen */
+html, 
+body, 
+#__next {
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a; /* Dark Slate Blue */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* The parent container that holds your card */
+#app-container {
+  display: flex !important;
+  align-items: center !important;   /* Centers vertically */
+  justify-content: center !important; /* Centers horizontally */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+/* The card itself */
+.card {
+  width: 100%;
+  max-width: 420px;
+  background-color: #1e293b; /* Slightly lighter slate */
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid #334155; /* Subtle border */
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/* Animation for when the short link appears */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
